@@ -1,0 +1,95 @@
+/* ShelterBST.h Class declarations */
+#ifndef SHELTERBST_H
+#define SHELTERBST_H
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+class ShelterBST {
+private:
+
+    // Pet object
+    struct Pet {
+
+        string name;
+        int age;
+
+        // Default constructor in case of an error
+        Pet();
+
+        // Actual constructor to create pet objects
+        Pet(string Name, int Age);
+
+    };
+
+    // Node object
+    struct TreeNode {
+        Pet* pet;
+        TreeNode* left;
+        TreeNode* right;
+
+        // Constructor to clean up the code for creation of new nodes
+        TreeNode(Pet* pet1);
+    };
+
+    // Private root object so we can protect it
+    TreeNode* root;
+
+    // Searches and insert
+    TreeNode* insert(TreeNode* root, Pet* pet);
+    TreeNode* search(TreeNode* root, int petAge);
+    TreeNode* findParent(TreeNode* root, TreeNode* previous, int age);
+    TreeNode* findSuccessor(int age);
+    TreeNode* successorHelper(TreeNode* parent, TreeNode* node);
+
+    // Traversal calls
+    void preorder(TreeNode * root);
+    void postorder(TreeNode * root);
+    void inorder(TreeNode * root);
+
+    // Counts
+    int numNodes(TreeNode * root);
+    int numLeafs(TreeNode * root);
+    int numNodesInLevel(TreeNode * root);
+    int heightTree(TreeNode * root);
+
+    // Check
+    bool balancedDisplay(TreeNode * root);
+
+    // Deletion
+    TreeNode* deleteNode(TreeNode * root);
+    TreeNode* deleteTree(TreeNode * root);
+
+// Define public prototypes for a ShelterBST object to call during execution
+public:
+
+    // Class Object Constructor
+    ShelterBST();
+
+    // Traversal calls
+    void postorderDisplay();
+    void preorderDisplay();
+    void inorderDisplay();
+
+    // Searches and insert
+    void successorDisplay(int age);
+    void parentDisplay(int age);
+    void searchPet(int age);
+    void insertPet(string name, int age);
+
+    // Counts
+    void numNodeDisplay();
+    void numLeafDisplay();
+    void numNodesLevelDisplay();
+    void heightDisplay();
+
+    // Check
+    void balancedDisplay();
+
+    // Deletion
+    void removeNode();
+    void destroyTree();
+
+};
+#endif

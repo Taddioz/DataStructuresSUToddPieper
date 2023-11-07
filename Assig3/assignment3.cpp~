@@ -1,0 +1,94 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+#include "ShelterBST.h"
+#include "ShelterBST.cpp"
+
+using namespace std;
+
+
+
+
+int main(int argc, char* argv[])
+{
+
+    // Error handle input and remind user of proper usage
+    if(argc != 2) {
+
+        cout << "Usage: assignment1 <testFileName>" << endl;
+        return 1;
+
+    }
+
+    // Create a file reading object
+    string filename = argv[1];
+    ifstream infile(filename);
+
+    // Error handle in case our file won't open
+    if(!infile.is_open()) {
+
+        cout << "Unable to open file: " << filename << endl;
+        return 1;
+
+    }
+
+    // Create a Shelter object and define a string we will take as our choice input
+    ShelterBST Shelter;
+    string line;
+
+    // "while we are reading choices from input file"
+    while(getline(infile, line)) {
+
+        // Set define variables to be used to store input from the file
+        // We don't initialize petName or petAge as those are only guaranteed to follow two of 5 cases, and
+        // so we only initialize when we enter those cases
+        char choice = line[0];
+        string petName;
+        int petAge;
+
+        switch(choice) { // Note above main goes over what each choice is
+
+            case 'i':
+
+                infile >> petName;
+                infile >> petAge;
+                Shelter.insertPet(petName, petAge);
+                break;
+
+            case 's':
+
+                infile >> petAge;
+                Shelter.searchPet(petAge);
+                break;
+
+            case 'n':
+
+                Shelter.inorderDisplay();
+                break;
+
+            case 'e':
+
+                Shelter.preorderDisplay();
+                break;
+
+            case 'o':
+
+                Shelter.postorderDisplay();
+                break;
+
+            case 'p':
+
+                infile >> petAge;
+                Shelter.parentDisplay(petAge);
+                break;
+
+            case 'u':
+                infile >> petAge;
+                Shelter.successorDisplay(petAge);
+                break;
+        }// end of switch
+
+    }// end of file reading while
+
+    return 0;
+} // end of main
