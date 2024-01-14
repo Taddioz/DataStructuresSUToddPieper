@@ -27,7 +27,8 @@ This lab was an introduction to Binary Search trees and a focus on splitting fil
 Lab 4: 
 This lab was an introduction to heaps, like Lab3 we used a Pet class object as our data to store with name and age, for the heap we implemented a max heap preserving the structure of the pet pointers by their age. Our heap for this lab was stored in an array of fixed size, although for function implementation we kept track of the true size of our heap with a private size variable, incrementing and decrementing as we insert and delete. Implemented functions for this lap were precolate up and down for preserving structure, deleting the oldest pet (index 0) and reconstructing the heap as weel as some displays like level order traversal, "adopting" the oldest pet, and showing the current number of pets in the shelter.
 
-
+Lab 5:
+Again building on storage of Pet Objects, this lab was to introduce us to quicksort, heapsort, and mergresort. TO implement all the algorithims and measure the time it takes to sort increasing large number of objects from 10- 10000
 
 
 ASSIGNMNETS
