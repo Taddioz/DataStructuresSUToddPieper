@@ -34,7 +34,7 @@ Again building on storage of Pet Objects, this lab was to introduce us to quicks
 ASSIGNMNETS
 
 Assignment 1: 
-Still early into this class this assingment served as a refresher for familiar data structures, int this case stacks, added pointers to cats and dogs to stacks and implemented functions to retrieve the most recently added cat, dog, or animal in general
+Still early into this class this assingment served as a refresher for familiar data structures, in this case stacks, added pointers to cats and dogs to stacks and implemented functions to retrieve the most recently added cat, dog, or animal in general
 
 Assignment 2: 
 This assignment focused on building recursive methods to solve 4 completely seperate problems
