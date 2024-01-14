@@ -1,0 +1,6 @@
+heapTest: Lab4.o PetHeap.o
+	g++ -o heapTest Lab4.o PetHeap.o
+Lab4.o: Lab4.cpp PetHeap.h
+	g++ -c -Wall -Werror -pedantic -std=c++11 Lab4.cpp
+PetHeap.o: PetHeap.cpp PetHeap.h
+	g++ -c -Wall -Werror -pedantic -std=c++11 PetHeap.cpp

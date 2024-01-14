@@ -1,0 +1,229 @@
+// Todd Pieper
+// Binary Search Tree Basic Operations
+// Lab 3, CPSC 2430
+//
+
+#include <iostream>
+#include <string>
+#include <fstream>
+
+using namespace std;
+
+// Define our class with our Pet struct to hold information and Tree struct to
+// be a binary tree holding Pet pointers
+class ShelterBST {
+
+private:
+
+  struct Pet {
+
+    string name;
+    int age;
+    Pet() {
+
+      name = "Error, default constructor was called";
+      age = -1;
+
+    }
+    Pet(string petName, int petAge) {
+
+      name = petName;
+      age = petAge;
+
+    }
+  };
+  struct TreeNode {
+
+    Pet* pet; 
+    TreeNode* left;
+    TreeNode* right;
+
+    TreeNode() {
+      pet = nullptr;
+      left = nullptr;
+      right = nullptr;
+    }
+  };
+
+  TreeNode* root = nullptr;
+
+  // PRIVATE RECURSIVE FUNCTIONS
+  // For this lab, TreeNodes will be ordered by Pet name alphabetically.
+  // No duplicate values (Pet names) will be entered for this lab.
+  // Note that string comparison is alphabetical in C++ (“cat” < “dog”)
+  TreeNode* insert(TreeNode* root, Pet* thePet) {
+
+    cout << "test";
+    //  if (root == NULL) {
+
+      cout << "test2";
+      root->pet = thePet;
+      cout << "test3";
+      return root;
+
+      // }
+
+      // bool check = root->pet->name < thePet->name;
+
+      // if (check) {
+      // return insert(root->left, thePet);
+      // } else {
+      // return insert(root->right, thePet);
+      // }
+
+}
+
+  // Returns pointer to TreeNode that matches the given name
+  // Nullptr if no match is found
+  TreeNode* search(TreeNode *root, string name) {
+    // add your code here
+    return nullptr;    // ...
+  }
+  // The three traversals below will neatly print to screen
+  // the Pets’ names and ages in the respective order
+  void inorder(TreeNode * root) {
+    // add your code here
+    // ...
+  }
+  void preorder(TreeNode * root) {
+    // add your code here
+    // ...
+  }
+  void postorder(TreeNode * root) {
+    // add your code here
+    //
+  }
+
+public:
+
+  ShelterBST() {
+    root = nullptr;
+  }
+  
+  void insertPet(string name, int age) {
+    cout << "hi";
+    root = insert(root, new Pet(name, age));
+    cout << "tab";
+  }
+  
+  void searchPet(string name) {
+
+    TreeNode* result = search(root, name);
+    cout << "Searching for pet with name " << name << ": ";
+
+      // search will return null if pet is not found so we can check result and print
+      // according to what it is set to, since the first print doesn't end with a new line
+      // the prints from result will continue on the same line as desired.
+      if (result == nullptr) {
+
+        cout << "no matching pet found" << endl;
+
+      } else {
+
+        cout << "found " << name << " age " << result->pet->age << "!" << endl;
+
+      }
+  }
+
+  void inorderDisplay() {
+    inorder(root);
+  }
+
+  void preorderDisplay() {
+    preorder(root);
+  }
+
+  void postorderDisplay() {
+    postorder(root);
+  }
+  
+};// end of class
+
+// In your main function, test your implementation
+// Read instructions from a file specified in the command line
+// (consult code from Assignment 1)
+
+// Add code to create an ifstream object from the
+// command line specified filename
+// Add a while control structure to read from the file stream
+// Add a switch control structure to handle options read from input file
+// Option i: Insert pet (will be followed by Pet Name and Pet Age)
+// Option s: Search pet (will be followed by Pet Name to be searched)
+// Option n: Display in order traversal
+// Option e: Display pre order traversal
+// Option o: Display post order traversal
+
+
+int main(int argc, char* argv[])
+{
+
+  cout << "help";
+   if(argc != 2) {
+
+     cout << "Usage: assignment1 <testFileName>" << endl;
+     return 1;
+    
+   }
+
+  cout << "where am i";
+  string filename = argv[1];
+  ifstream infile(filename);
+
+  if(!infile.is_open()) {
+
+  cout << "Unable to open file: " << filename << endl;
+  return 1;
+
+  }
+
+  ShelterBST Shelter;
+  string line;
+  
+  while(infile.is_open()) {
+
+    string name;
+    char choice;
+    infile >> choice;
+    int age;
+    
+    switch(choice) {
+
+    case 'i':
+
+      cout << "hello";
+      getline(infile, name);
+      infile >> age;
+      cout << age;
+      Shelter.insertPet("hello", 6);
+      break;
+
+    case 's':
+
+      // getline(infile, name);
+      // getline(infile, age);
+      cout << "Searching for pet with name " << name << ": ";
+      Shelter.searchPet(name);
+      break;
+
+    case 'n':
+
+      Shelter.inorderDisplay();
+      break;
+      
+    case 'e':
+
+      Shelter.preorderDisplay();
+      break;
+      
+    case 'o':
+
+      Shelter.postorderDisplay();
+      break;
+
+    }// end of switch
+
+   }// end of file reading while
+  
+  return 0;
+} // end of main
+
