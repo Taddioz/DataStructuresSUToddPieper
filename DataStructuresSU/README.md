@@ -5,7 +5,7 @@ Assignment descriptions:
 
 Lab note - Labs were mostly introductory assignments typically given out on a friday and due the following Monday, often times were expanded upon during class and inn the corresponding assignment with the same number
 
-Assignment note - Assignments were typically the bigger works, typically given a 7-10 days to submit. Often associated with the lab of the same nummber, doing well on the lab meant you would have a good understanding going 
+Assignment note - Assignments were typically the bigger works, typically given a 7-10 days to submit. Often associated with the lab of the same number, doing well on the lab meant you would have a good understanding going 
 into the assignment,
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
