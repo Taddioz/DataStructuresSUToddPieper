@@ -1,7 +1,7 @@
 My code from my CPSC2430 Data Structures class Seattle University
-Language used for this class is C++ (11)
-0 group assignments for this class, all work is my own
-Lots of work required handling I/O from files and command line
+-Language used for this class is C++ (11)
+-0 group assignments for this class, all work is my own
+-Lots of work required handling I/O from files and command line
 
 Assignment descriptions:
 
