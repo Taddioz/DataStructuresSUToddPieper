@@ -53,7 +53,7 @@ This assignment focused on building recursive methods to solve 4 completely sepe
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Assignment 3: 
 As noted in Lab3, this is a deeper implementation of BST Operations. We reinforced ideas of code reuse by again implementing insert, serach, and three traversals of inorder, postorder, and preorder although this time 
-the pets were sorted by age. We added other functionailty of finding th einorder successor, delete using inorder successor, finding the parent, counting number of nodes, leaf nodes, internal nodes, height calculation, 
+the pets were sorted by age. We added other functionailty of finding the inorder successor, delete using inorder successor, finding the parent, counting number of nodes, leaf nodes, internal nodes, height calculation, 
 balance checking (not resolving), and tree deletion
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Assignment 4: 
