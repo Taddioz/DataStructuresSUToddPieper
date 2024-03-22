@@ -1,6 +1,8 @@
 This repository is a compilation of all code submitted for coursework during my time at Seattle University. The sections are broken down by each class I took that required code submission. Course descriptions are pasted
 below along with the grade I received and a note about how I felt about the class. Descriptions of each assignment are in seperate text files within each course directory
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Data Structures - Grade 4.0
 
 Description:
