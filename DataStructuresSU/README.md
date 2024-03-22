@@ -49,7 +49,7 @@ This assignment focused on building recursive methods to solve 4 completely sepe
 --
 -a recursive function root5 which calculates the fifth root of a given number without using cmath root
 --
--a recursive function to return an apporzimation to a given depth for Ramanujan's nested radical as well as being able to test it at a large depth to find what it converges to
+-a recursive function to return an approximation to a given depth for Ramanujan's nested radical as well as being able to test it at a large depth to find what it converges to
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Assignment 3: 
 As noted in Lab3, this is a deeper implementation of BST Operations. We reinforced ideas of code reuse by again implementing insert, serach, and three traversals of inorder, postorder, and preorder although this time 
