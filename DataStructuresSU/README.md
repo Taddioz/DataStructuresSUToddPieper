@@ -31,7 +31,7 @@ the current number of pets in the shelter.
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Lab 5:
 Again building on storage of Pet Objects, this lab was to introduce us to quicksort, heapsort, and mergresort. TO implement all the algorithims and measure the time it takes to sort increasing large number of objects from 10- 10000
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ASSIGNMNETS
 
