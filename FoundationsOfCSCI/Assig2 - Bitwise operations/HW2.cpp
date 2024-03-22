@@ -6,11 +6,6 @@
 
 using namespace std;
 
-// Purpose of this code is to return the ith coefficient of a polynomial factored out from the form (x+y)^n
-// We willm create an iterative method to solve this problem as well as a recursive method
-// We will test both methods as the input increases and measure their time it takes to reach a solution
-// as well as the validity of the solution
-
 // Function prototype that will print out a given set
 void printSet(int set);
 
