@@ -4,9 +4,9 @@
 Assignment 1 - CPU Scheduling Algorithims
 In this programming assignment I created a simulator that will simulate the execution of different CPU scheduling algorithms discussed in class.
 In particular, the simulator implemented the following scheduling algorithms
-a. First Come First Serve (FCFS)
-b. Shortest Remaining Time First (SRT)
-c. Round Robin (RR)
+* First Come First Serve (FCFS)
+* Shortest Remaining Time First (SRT)
+* Round Robin (RR)
 
 Input is taken from known formatted text files.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
