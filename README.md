@@ -12,7 +12,7 @@ Note:
 This class developed my strong C++ skills that I was introduced to at Highline College. There were a lot of data strucutres to cover and so lecture was quick but I learned strong fundamentals and had
 good practice implementing them. My teacher was very passionate about coding and teaching which made me love the course and love the language of C++.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Foundations of Computer Science - Grade 3.9
 --
@@ -23,7 +23,7 @@ Note:
 The coding in this class was minimal and simple to implement. The only difficulty was understanding the material which posed an interesting challenge as generally with school coding work I had harder times implementing than understanding problems
 but this course flipped that around. It really helped me slow down to assess problems before attempting to work on solutions, not only for coding, but for all kinds of problems
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 Computer Organization - Grade 4.0
 --
