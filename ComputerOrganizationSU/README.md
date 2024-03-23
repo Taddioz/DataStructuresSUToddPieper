@@ -29,3 +29,4 @@ All files were provided by the professor as the base of the filesystem. My work 
 * stat (name) - Displays stats for the given file or directory.
 * cat (filename) - Display the contents of the file to the screen.
 * rm (filename) - Removes specified file from the directory
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
