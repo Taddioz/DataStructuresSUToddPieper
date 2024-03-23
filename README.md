@@ -4,7 +4,7 @@ below along with the grade I received and a note about how I felt about the clas
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Data Structures - Grade 4.0
-
+--
 Description:
 Fundamental data structures including binary search trees, heaps, priority queues, and hash tables. Abstract data type implementation and design. Code analysis using big O notation, recursion, and sorting algorithms.
 
@@ -15,7 +15,7 @@ good practice implementing them. My teacher was very passionate about coding and
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Foundations of Computer Science - Grade 3.9
-
+--
 Description: 
 Introduction to logic, applications of logic to computer science, functions, combinatorics, equivalence relations, methods of proof, induction, recurrence relations and recursion in programming languages, graphs, graph implementations and applications
 
@@ -26,7 +26,7 @@ but this course flipped that around. It really helped me slow down to assess pro
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Computer Organization - Grade 4.0
-
+--
 Description:
 Computer system infrastructure, implementation, and design. Topics include operating systems, resource allocation and scheduling, concurrency, synchronization, virtualization, reliability,
 networking, and security. Development of multithreaded concurrent programs and client-server networking programs.
